@@ -16,10 +16,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void logInButtonFunction(View view) {
-        EditText usernameEditText = findViewById(R.id.usernameEditText);
-        EditText passwordEditText = findViewById(R.id.passwordEditText);
+        EditText usernameEditText = (EditText) findViewById(R.id.usernameEditText);
+        EditText passwordEditText = (EditText) findViewById(R.id.passwordEditText);
 
-        Log.i("Views", usernameEditText.getText().toString());
-        Log.i("Views", passwordEditText.getText().toString());
+        Log.i("Info", "Button pressed.");
+        Log.i("Username", usernameEditText.getText().toString());
+        Log.i("Password", passwordEditText.getText().toString());
     }
 }
